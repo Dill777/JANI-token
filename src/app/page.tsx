@@ -1,101 +1,164 @@
+"use client";
+
 import Image from "next/image";
+import bearMascot from "./bear.jpeg";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <div
+            className="min-h-screen rotate-180"
+            style={{ backgroundColor: "#FFF4D6", color: "#4E342E" }}
+        >
+            <section
+                className="w-full flex flex-col items-center justify-center px-4 py-16 rotate-180"
+                style={{
+                    background: "linear-gradient(135deg, #FFC107, #FFB300)",
+                }}
+            >
+                <div className="max-w-4xl mx-auto text-center">
+                    <div className="mb-6">
+                        <Image
+                            src={bearMascot}
+                            alt="Bear Mascot"
+                            width={300}
+                            height={300}
+                            className="mx-auto"
+                            priority
+                        />
+                    </div>
+                    <h1 className="text-4xl font-bold mb-4">$JANI Token</h1>
+                    <p className="text-lg mb-8 max-w-2xl mx-auto">
+                        The sweetest and coolest meme token! We start from the
+                        bottom and only go up, because bears love honey and
+                        up‑only.
+                    </p>
+                    <div className="flex gap-4 justify-center">
+                        <a
+                            href="#"
+                            className="bg-[#3E2723] text-white px-6 py-2 rounded hover:bg-[#5D4037] transition"
+                        >
+                            Buy Token
+                        </a>
+                        <a
+                            href="#"
+                            className="bg-[#3E2723] text-white px-6 py-2 rounded hover:bg-[#5D4037] transition"
+                        >
+                            Community
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section
+                className="w-full px-4 py-16 rotate-180"
+                style={{ backgroundColor: "#FFF8E1" }}
+            >
+                <div className="max-w-3xl mx-auto text-center">
+                    <h2 className="text-3xl font-bold mb-4">About the Token</h2>
+                    <p className="text-lg">
+                        Dis is jani meme, da man the myth the legend who we owe
+                        everything on bera too dis is not jani just a bera who
+                        knows he is the main reason most are here
+                    </p>
+                </div>
+            </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <section
+                className="w-full px-4 py-16 rotate-180"
+                style={{ backgroundColor: "#FFECB3" }}
+            >
+                <div className="max-w-4xl mx-auto text-center">
+                    <h2 className="text-3xl font-bold mb-4">Tokenomics</h2>
+                    <p className="text-lg mb-8">
+                        Do you really dink there is tokenomics here?
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="bg-white p-6 rounded shadow">
+                            <h3 className="text-xl font-bold mb-2">
+                                Max Supply
+                            </h3>
+                            <p>I don`t know, not sry</p>
+                        </div>
+                        <div className="bg-white p-6 rounded shadow">
+                            <h3 className="text-xl font-bold mb-2">Burn</h3>
+                            <p>13% of tokens locked</p>
+                        </div>
+                        <div className="bg-white p-6 rounded shadow">
+                            <h3 className="text-xl font-bold mb-2">
+                                Jani lock
+                            </h3>
+                            <p>
+                                Jani hab dis token 13%, I dink that he didn`t
+                                know how to rug you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                className="w-full px-4 py-16 rotate-180"
+                style={{ backgroundColor: "#FFE082" }}
+            >
+                <div className="max-w-4xl mx-auto text-center">
+                    <h2 className="text-3xl font-bold mb-8">Roadmap</h2>
+                    <div className="space-y-4">
+                        <div className="bg-white p-4 rounded shadow">
+                            <h3 className="text-xl font-bold">Phase 1</h3>
+                            <p>just for fun</p>
+                        </div>
+                        <div className="bg-white p-4 rounded shadow">
+                            <h3 className="text-xl font-bold">Phase 2</h3>
+                            <p>another fun</p>
+                        </div>
+                        <div className="bg-white p-4 rounded shadow">
+                            <h3 className="text-xl font-bold">Phase 3</h3>
+                            <p>Maybe other fun ???</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                className="w-full px-4 py-16 rotate-180"
+                style={{ backgroundColor: "#FFD54F" }}
+            >
+                <div className="max-w-3xl mx-auto text-center">
+                    <h2 className="text-3xl font-bold mb-4">
+                        Join Our Community
+                    </h2>
+                    <p className="text-lg mb-8">
+                        Become a part of our JANI den and stay updated with the
+                        latest news!
+                    </p>
+                    <div className="flex gap-4 justify-center">
+                        <a
+                            href="#"
+                            className="bg-[#3E2723] text-white px-6 py-2 rounded hover:bg-[#5D4037] transition"
+                        >
+                            Telegram
+                        </a>
+                        <a
+                            href="#"
+                            className="bg-[#3E2723] text-white px-6 py-2 rounded hover:bg-[#5D4037] transition"
+                        >
+                            Twitter
+                        </a>
+                        <a
+                            href="#"
+                            className="bg-[#3E2723] text-white px-6 py-2 rounded hover:bg-[#5D4037] transition"
+                        >
+                            Discord
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                className="w-full px-4 py-6 text-center rotate-180"
+                style={{ backgroundColor: "#3E2723", color: "#FFFFFF" }}
+            >
+                <p>© 2025 JANI Token. Not Financial Advice.</p>
+            </footer>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
